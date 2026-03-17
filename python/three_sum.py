@@ -1,14 +1,21 @@
-# Statement
+"""
+PROBLEM: 3SUM
 
-# Given an integer array, nums, find and return all unique triplets [nums[i], nums[j], nums[k]], such that i ≠= j, i ≠= k, and j ≠= k and nums[i] + nums[j] + nums[k] ==0==0.
+Statement:
+Given an integer array 'nums', return all unique triplets [nums[i], nums[j], nums[k]] 
+such that:
+1. i != j, i != k, and j != k (distinct indices)
+2. nums[i] + nums[j] + nums[k] == 0
 
-#      Note: The order of the triplets in the output does not matter.
+Constraints:
+- 3 <= nums.length <= 500
+- -10^3 <= nums[i] <= 10^3
 
-#  Constraints:
+Technique: Sorting + Two Pointers
+Time Complexity: O(N^2)
+Space Complexity: O(1) or O(N) depending on sorting implementation
+"""
 
-#      3 ≤ 3 ≤ nums.length ≤500≤500
-
-#      −10^3≤−10^3≤ nums[i] ≤103≤103
 
 def three_sum(nums):
     ans = []
